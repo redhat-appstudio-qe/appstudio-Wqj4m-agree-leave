@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-gbdd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-bundle-tenant/appstudio/dc-metro-map-gbdd@sha256:e6afe53d0b97af30d0e1250dc74baacef27f668f6c2e30d222135b655b4cbf43
+        name: my-nodejs
+        resources: {}
+status: {}
